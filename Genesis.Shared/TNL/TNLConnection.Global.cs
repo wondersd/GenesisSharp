@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-using TNL.NET.Entities;
+using TNL.Entities;
 
 namespace Genesis.Shared.TNL
 {

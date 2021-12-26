@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-using TNL.NET.Data;
-using TNL.NET.Entities;
-using TNL.NET.Structs;
-using TNL.NET.Types;
-using TNL.NET.Utils;
+using TNL.Data;
+using TNL.Entities;
+using TNL.Structures;
+using TNL.Types;
+using TNL.Utils;
 
 namespace Genesis.Shared.TNL
 {

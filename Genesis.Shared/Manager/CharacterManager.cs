@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-using TNL.NET.Entities;
+using TNL.Entities;
 
 namespace Genesis.Shared.Manager
 {

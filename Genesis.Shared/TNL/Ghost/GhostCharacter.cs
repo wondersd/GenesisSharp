@@ -1,6 +1,6 @@
-﻿using TNL.NET.Entities;
-using TNL.NET.Types;
-using TNL.NET.Utils;
+﻿using TNL.Entities;
+using TNL.Types;
+using TNL.Utils;
 
 namespace Genesis.Shared.TNL.Ghost
 {

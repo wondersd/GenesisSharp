@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TNL.NET.Entities;
+using TNL.Entities;
 
 namespace Genesis.Shared.Manager
 {

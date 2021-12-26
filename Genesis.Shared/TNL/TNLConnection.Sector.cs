@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-using TNL.NET.Entities;
+using TNL.Entities;
 
 namespace Genesis.Shared.TNL
 {
