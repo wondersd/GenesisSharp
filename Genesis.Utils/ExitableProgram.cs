@@ -11,7 +11,7 @@ namespace Genesis.Utils
         protected static void Initialize(ExitEventHandler handler)
         {
             ExitHandler += handler;
-            NativeMethods.SetConsoleCtrlHandler(ExitHandler, true);
+            //NativeMethods.SetConsoleCtrlHandler(ExitHandler, true);
         }
 
         protected static void WriteLogo()
@@ -30,9 +30,9 @@ namespace Genesis.Utils
         }
     }
 
-    internal class NativeMethods
-    {
-        [DllImport("Kernel32")]
-        public static extern bool SetConsoleCtrlHandler(ExitEventHandler handler, bool add);
-    }
+    // internal class NativeMethods
+    // {
+    //     [DllImport("Kernel32")]
+    //     public static extern bool SetConsoleCtrlHandler(ExitEventHandler handler, bool add);
+    // }
 }
