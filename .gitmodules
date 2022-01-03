@@ -1,0 +1,6 @@
+[submodule "UniversalAuth"]
+	path = UniversalAuth
+	url = git@github.com:Blumster/UniversalAuth.git
+[submodule "TNL.NET"]
+	path = TNL.NET
+	url = git@github.com:Blumster/TNL.NET.git
