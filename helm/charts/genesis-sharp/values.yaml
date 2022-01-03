@@ -1,0 +1,75 @@
+# Default values for genesis-sharp.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+global:
+  image:
+    repository: genesissharp
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: latest
+
+pxc-db:
+  enabled: false
+  allowUnsafeConfigurations: true
+  pxc:
+    size: 2
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "200m"
+      requests:
+        memory: "128Mi"
+        cpu: "200m"
+  haproxy:
+    enabled: true
+    size: 2
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "200m"
+      requests:
+        memory: "128Mi"
+        cpu: "200m"
+  logcollector:
+    enabled: false
+  backup:
+    enabled: false
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

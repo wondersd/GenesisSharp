@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "genesis-sharp-sector.fullname" . }}
+  labels:
+    {{- include "genesis-sharp-sector.labels" . | nindent 4 }}
+data:
+  Genesis.Sector.exe.config: |
+    <?xml version="1.0" encoding="utf-8" ?>
+    <configuration>
+        <appSettings>
+            <add key="IsDebugMode" value="false"/>
+            <add key="ConnectionString" value="{{ .Values.config.connectionString }}"/>
+            <add key="AssetPath" value="D:\path\to\14.117\aa\root\"/>
+            <add key="ServerId" value="{{ .Values.config.serverId }}"/>
+        </appSettings>
+        <startup> 
+            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+        </startup>
+    </configuration>

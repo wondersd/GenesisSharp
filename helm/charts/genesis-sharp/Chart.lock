@@ -1,0 +1,6 @@
+dependencies:
+- name: pxc-db
+  repository: https://percona.github.io/percona-helm-charts
+  version: 1.10.0
+digest: sha256:2bd20275d67f079917ce8070361a8ba4c027b15593ed189ba18a9fff39f72b8c
+generated: "2021-12-28T11:37:28.131792-05:00"

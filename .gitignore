@@ -196,3 +196,5 @@ FakesAssemblies/
 *.opt
 Libraries/TNL.NET.dll
 Libraries/UniversalAuth.dll
+
+helm/charts/genesis-sharp/charts/*.tgz

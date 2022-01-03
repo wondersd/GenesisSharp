@@ -1,0 +1,15 @@
+apiVersion: mysql.presslabs.org/v1alpha1
+kind: MysqlUser
+metadata:
+  name: {{ include "genesis-sharp-auth.fullname" . }}
+  labels:
+    {{- include "genesis-sharp-auth.labels" . | nindent 4 }}
+spec:
+  clusterRef:
+    name: my-cluster
+  user: {{ include "genesis-sharp-auth.fullname" . }}
+  allowedHosts:
+    - "0.0.0.0"
+  password:
+    name: {{ include "genesis-sharp-auth.fullname" . }}
+    key: password
