@@ -1,3 +1,4 @@
+{{- if .Values.presslabs_mysql.enabled }}
 apiVersion: mysql.presslabs.org/v1alpha1
 kind: MysqlUser
 metadata:
@@ -13,3 +14,4 @@ spec:
   password:
     name: {{ include "genesis-sharp-auth.fullname" . }}
     key: password
+{{- end }}

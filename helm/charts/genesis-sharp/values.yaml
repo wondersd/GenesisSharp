@@ -11,6 +11,10 @@ global:
     # Overrides the image tag whose default is the chart appVersion.
     tag: latest
 
+presslabs_mysql:
+  enabled: true
+  rootPassword: root
+
 pxc-db:
   enabled: false
   allowUnsafeConfigurations: true
