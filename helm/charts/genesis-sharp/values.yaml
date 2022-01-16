@@ -12,9 +12,16 @@ global:
     tag: latest
 
 presslabs_mysql:
-  enabled: true
+  enabled: false
   rootPassword: root
 
+bitnami-mysql:
+  enabled: true
+  auth:
+    rootPassword: root
+    database: genesis_sharp
+    username: genesis_sharp
+    password: genesis_sharp
 pxc-db:
   enabled: false
   allowUnsafeConfigurations: true

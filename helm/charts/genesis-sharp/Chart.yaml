@@ -28,3 +28,8 @@ dependencies:
     version: "1.10.0"
     repository: "https://percona.github.io/percona-helm-charts"
     condition: pxc-db.enabled
+  - name: mysql
+    alias: bitnami-mysql
+    version: "8.8.21"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: bitnami-mysql.enabled

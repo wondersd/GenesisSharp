@@ -2,5 +2,8 @@ dependencies:
 - name: pxc-db
   repository: https://percona.github.io/percona-helm-charts
   version: 1.10.0
-digest: sha256:2bd20275d67f079917ce8070361a8ba4c027b15593ed189ba18a9fff39f72b8c
-generated: "2021-12-28T11:37:28.131792-05:00"
+- name: mysql
+  repository: https://charts.bitnami.com/bitnami
+  version: 8.8.21
+digest: sha256:2d7c7bd2fe844a925e4b2ea9657f7a97a7429daf3a008b6277117054338bd242
+generated: "2022-01-15T19:39:53.940458-05:00"

@@ -7,8 +7,11 @@ replicaCount: 1
 image: {}
 
 config:
-  connectionString: "Server=mysql;Port=3306;Uid=genesis-sharp-genesis-sharp-global;Pwd=genesis-sharp-genesis-sharp-global;Database=;Character Set=utf8;Connection Timeout=10"
+  connectionString: "Server=genesis-sharp-bitnami-mysql;Port=3306;Uid=genesis_sharp;Pwd=genesis_sharp;Database=genesis_sharp;Character Set=utf8;Connection Timeout=10"
   serverId: 1
+
+presslabs_mysql:
+  enabled: false
 
 imagePullSecrets: []
 nameOverride: ""
